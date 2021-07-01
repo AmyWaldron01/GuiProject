@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:700|Source+Sans+Pro" rel="stylesheet">
+
+    <title>Music</title>
+  </head>
+	  <style>
+			<!-- background color -->
+			body
+			{
+				background-image: url("background.jpg");
+			}
+			<!-- Middle box background color -->
+			.row
+			{
+				background-color: sliver;
+			}
+			<!-- Customize Header -->
+			.Header
+			{
+				font-family: 'Merriweather', serif;
+				font-size: 55px;
+				color: #BD523F; 
+				padding-top: 70px;
+				padding-left:50px;
+			}
+			<!-- sizing card size -->
+			.card-deck
+			{
+				width:700px;
+			}
+			<!-- customize card -->
+			.card-body
+			{
+				height: 130px;
+				font-family: 'Source Sans Pro', sans-serif;
+				font-size: 18px;
+			}
+	  </style>
+  <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#"> <img src = "musicnote.png" width= "20px" height = "20px">Music</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+			  <li class="nav-item active">
+				<a class="nav-link" href="page1Loggedin.html">Home <span class="sr-only">(current)</span></a>
+			  </li>
+			  <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  Shop by Category
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				  <a class="dropdown-item" href="fictionLogged.html">Pop</a>
+				  <a class="dropdown-item" href="nonfictionLogged.html">Throw Backs</a>
+				</div>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="bestsellerLogged.html">Best-Seller</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link " href="contactusLogged.html">Contact us</a>
+			  </li>
+			</ul>
+			<a href="basket.html"><img src="cart.png" class="pad" width="50px" height="50px" style="margin-right:15px;"></a>
+			<form class="navbar-form">
+				<div class="form-group" style="display:inline;">
+				<div class="input-group">
+					<input type="text" class="form-control">
+					<a href="#" class="btn btn-outline-dark my-2 my-sm-0">
+					  <span class="fa fa-search"></span> <b>Search<b> 
+					</a> 
+				</div>
+				</div>
+			</form>
+			<div class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle"id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Amy
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				  <a class="dropdown-item" href="Profile.html">Edit Details</a>
+				  <a class="dropdown-item" href="page1.html">Log out</a>
+				</div>
+			  </div>
+			
+		  </div>
+		</nav>
+		
+		
+		<!--Bootstrap grid -->
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-md-12 banner" >
+					<!-- Header -->
+					<div class = "Header">BEST SELLERS</div><br><br>
+				</div>
+				
+				<div class="col-md-12">
+					<!-- Card -->
+				<center>
+					<div class="card-deck"> 
+						<!-- vinyl 1 -->
+						<div class="card">
+							<!-- image of the vinyl -->
+							<!-- Button trigger modal -->
+							<img class="card-img-top" src="bestsellers/am.png" alt="Card image cap" width="200px" height="260px" data-toggle="modal" data-target="#vinyl1">
+							
+							<!-- Modal -->
+							<div class="modal fade" id="vinyl1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+							  <div class="modal-dialog" role="document">
+								<div class="modal-content">
+								  <div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLongTitle">AM</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									  <span aria-hidden="true">&times;</span>
+									</button>
+								  </div>
+								  <div class="modal-body">
+									 
+									 Fifth studio album by the English rock band. The album features the singles 'R U Mine?', 'Do I Wanna Know?' and 'Why'd You Only Call Me When You're High?' It also features guest appearances from Josh Homme, Peter Thomas and Bill Ryder-Jones. Produced by James Ford and Ross Orton, the album entered the UK Albums Chart at #1 and was named 'British Album of the Year' at the 2014 Brit Awards.
+								
+									 <br>€25.95
+								  </div>
+								  <!-- button for close and add to cart-->
+								  <div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary">Add to Cart</button>
+								  </div>
+								</div>
+							  </div>
+							</div>
+							
+							<!-- Details about the vinyl-->
+							<div class="card-body">
+								<p class="card-text">AM<br>ARTIC MONKEYS<br>€25.95</p>
+							  
+							</div>
+						</div>
+						<!-- vinyl 2 -->
+						<div class="card">
+							<!-- imgage of the vinyl -->
+							<!-- Button trigger modal -->
+							<img class="card-img-top" src="bestsellers/thebends.png" alt="Card image cap" width="200px" height="260px" data-toggle="modal" data-target="#vinyl2">
+							
+							<!-- Modal -->
+							<div class="modal fade" id="vinyl2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+							  <div class="modal-dialog" role="document">
+								<div class="modal-content">
+								  <div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLongTitle">THE BENDS </h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									  <span aria-hidden="true">&times;</span>
+									</button>
+								  </div>
+								  <div class="modal-body">
+									
+										Track Listing:
+										1. Planet Telex - Radiohead (4.19)
+										2. The Bends - Radiohead (4.06)
+										3. High and Dry - Radiohead (4.18)
+										4. Fake Plastic Trees - Radiohead (4.51)
+										5. Bones - Radiohead (3.09)
+										6. Nice Dream - Radiohead (3.53)
+										7. Just - Radiohead (3.54)
+										8. My Iron Lung - Radiohead (4.36)
+										9. Bullet Proof.. I Wish I Was - Radiohead (3.29)
+										10. Black Star - Radiohead (4.07)
+										11. Sulk - Radiohead (3.43)
+										12. Street Spirit (Fade Out) - Radiohead (4.12)
+									 <br>
+									€20.95
+								  </div>
+
+								  <!-- button for close and add to cart-->
+								  <div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary">Add to Cart</button>
+								  </div>
+								</div>
+							  </div>
+							</div>
+							
+							<!-- Details about the vinyl-->
+							<div class="card-body">
+								<p class="card-text">THE BENDS <br>RADIO HEAD<br>€20.95</p>
+							</div>							
+						</div>
+						<!-- vinyl 3 -->
+						<div class="card">
+							<!-- imgage of the vinyl -->
+							<!-- Button trigger modal -->
+							<img class="card-img-top" src="bestsellers/reputation.png" alt="Card image cap" width="200px" height="260px" data-toggle="modal" data-target="#vinyl3">
+
+							<!-- Modal -->
+							<div class="modal fade" id="vinyl3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+							  <div class="modal-dialog" role="document">
+								<div class="modal-content">
+								  <div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLongTitle">REPUTATION</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									  <span aria-hidden="true">&times;</span>
+									</button>
+								  </div>
+								  <div class="modal-body">
+									Sitxh studio album by the American singer and songwriter. The album topped the charts in the UK and features the singles 'Look What You Made Me Do', '...Ready for It?', 'End Game' (featuring Ed Sheeran and Future), 'New Year's Day', 'Gorgeous' and 'Delicate'.
+								  <br>
+									€35.95
+								  </div>
+								  <!-- button for close and add to cart-->
+								  <div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary">Add to Cart</button>
+								  </div>
+								</div>
+							  </div>
+							</div>
+							
+							<!-- Details about the vinyl-->
+							<div class="card-body">
+								<p class="card-text">REPUTATION<br>TAYLOR SWIFT<br>€15.99</p>
+							</div>	
+						</div>	
+								
+						<!-- vinyl 4 -->
+						<div class="card">
+							<!-- imgage of the vinyl -->
+							<!-- Button trigger modal -->
+							<img class="card-img-top" src="bestsellers/great.png" alt="Card image cap" width="200px" height="260px" data-toggle="modal" data-target="#vinyl4">
+
+							<!-- Modal -->
+							<div class="modal fade" id="vinyl4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+							  <div class="modal-dialog" role="document">
+								<div class="modal-content">
+								  <div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLongTitle">FLEETWOOD MAC</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									  <span aria-hidden="true">&times;</span>
+									</button>
+								  </div>
+								  <div class="modal-body">
+									Greatest hits compilation originally released in 1988, covering the period of the band's greatest commercial success, from the mid-1970s to the late-1980s. Tracks include 'Rhiannon', 'Dreams', 'Don't Stop', 'Go Your Own Way', 'Everywhere', 'Little Lies', and many more.
+									  <br>
+									€16.95
+								  </div>
+								  <!-- button for close and add to cart-->
+								  <div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary">Add to Cart</button>
+								  </div>
+								</div>
+							  </div>
+							</div>
+							
+							<!-- Details about the vinyl-->
+							<div class="card-body">
+								<p class="card-text">GREATEST HITS<br>FLEETWOOD MAC<br>€16.95</p>
+							</div>	
+						</div>
+					</div>
+					
+					<br><br>
+					
+					<div class="card-deck"> 
+							
+						<!-- vinyl 5 -->
+						<div class="card">
+							<!-- imgage of the vinyl -->
+							<!-- Button trigger modal -->
+							<img class="card-img-top" src="bestsellers/legends.png" alt="Card image cap" width="200px" height="260px" data-toggle="modal" data-target="#vinyl5">
+
+							<!-- Modal -->
+							<div class="modal fade" id="vinyl5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+							  <div class="modal-dialog" role="document">
+								<div class="modal-content">
+								  <div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLongTitle">LEGENDS NEVER DIE</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									  <span aria-hidden="true">&times;</span>
+									</button>
+								  </div>
+								  <div class="modal-body">
+									Third studio album by the American rapper, released posthumously after his death on July 10, 2020. The album features guest appearances from The Weeknd, Trippie Redd, Marshmello, Polo G, The Kid Laroi, and Halsey.
+									<br>
+									€32.95
+								  </div>
+								  <!-- button for close and add to cart-->
+								  <div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary">Add to Cart</button>
+								  </div>
+								</div>
+							  </div>
+							</div>
+							
+							<!-- Details about the vinyl-->
+							<div class="card-body">
+								<p class="card-text">LEGENDS NEVER DIE<br>JUICE WRLD<br>€32.95</p>
+							</div>							
+						</div>
+						<!-- vinyl 6 -->
+						<div class="card">
+							<!-- imgage of the vinyl -->
+							<!-- Button trigger modal -->
+							<img class="card-img-top" src="bestsellers/thebest.png" alt="Card image cap" width="200px" height="260px" data-toggle="modal" data-target="#vinyl6">
+
+							<!-- Modal -->
+							<div class="modal fade" id="vinyl6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+							  <div class="modal-dialog" role="document">
+								<div class="modal-content">
+								  <div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLongTitle">THE BEST OF 1990-2000</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									  <span aria-hidden="true">&times;</span>
+									</button>
+								  </div>
+								  <div class="modal-body">
+			
+									The second greatest hits album by the Irish rock band, originally released in November 2002. The 'Best of 1990-2000' contained two newly recorded tracks, 'Electrical Storm' and 'The Hands That Built America'; the former was released as a single, while the latter was released on the soundtrack to 'Gangs of New York'. The compilation also includes 'new mixes' of several songs, as well the tracks 'Hold Me, Thrill Me, Kiss Me, Kill Me' (a non-album single from 1995) and 'Miss Sarajevo' (which was originally credited to Passengers and also released as a single in 1995). <br>
+									€35.95
+								  </div>
+								  <!-- button for close and add to cart-->
+								  <div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary">Add to Cart</button>
+								  </div>
+								</div>
+							  </div>
+							</div>
+							
+							<!-- Details about the vinyl-->
+							<div class="card-body">
+								<p class="card-text">THE BEST OF 1990-2000<br>U2<br>€35.95</p>
+							</div>	
+						</div>
+						<!-- vinyl 7 -->
+						<div class="card">
+							<!-- imgage of the vinyl -->
+							<!-- Button trigger modal -->
+							<img class="card-img-top" src="bestsellers/guns.png" alt="Card image cap" width="200px" height="260px" data-toggle="modal" data-target="#vinyl7">
+
+							<!-- Modal -->
+							<div class="modal fade" id="vinyl7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+							  <div class="modal-dialog" role="document">
+								<div class="modal-content">
+								  <div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLongTitle">GUNS N' ROSES</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									  <span aria-hidden="true">&times;</span>
+									</button>
+								  </div>
+								  <div class="modal-body">
+			
+									Guns N’ Roses Greatest Hits is being released on 2LP vinyl for the very first time on 28.08.20. The band is in full support of the vinyl reissue and have asked us to rework the artwork for a new feel with different colors and new photos.
+
+									The collection is also being updated with their latest hit “Shadow Of Your Love” from the 2018 Appetite For Destruction: Locked N’ Loaded boxset.    <br>
+									€35.95
+								  </div>
+								  <!-- button for close and add to cart-->
+								  <div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary">Add to Cart</button>
+								  </div>
+								</div>
+							  </div>
+							</div>
+							
+							<!-- Details about the vinyl-->
+							<div class="card-body">
+								<p class="card-text">GREATEST HITS<br>GUNS N' ROSES<br>€35.95</p>
+							</div>	
+						</div>
+						<!-- vinyl 8 -->
+						<div class="card">
+							<!-- imgage of the vinyl -->
+							<!-- Button trigger modal -->
+							<img class="card-img-top" src="bestsellers/gold.png" alt="Card image cap" width="200px" height="260px" data-toggle="modal" data-target="#vinyl8">
+
+							<!-- Modal -->
+							<div class="modal fade" id="vinyl8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+							  <div class="modal-dialog" role="document">
+								<div class="modal-content">
+								  <div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLongTitle">GOLD</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									  <span aria-hidden="true">&times;</span>
+									</button>
+								  </div>
+								  <div class="modal-body">
+			
+									Greatest hits compilation by the Swedish pop group. One of the best-selling albums of all time, the album features all of ABBA's biggest hits released between 1973 and 1981, including 'Dancing Queen', 'Take a Chance On Me', 'Mamma Mia', 'The Winner Takes It All', 'Waterloo', and many more.  <br>
+									€35.95
+								  </div>
+								  <!-- button for close and add to cart-->
+								  <div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary">Add to Cart</button>
+								  </div>
+								</div>
+							  </div>
+							</div>
+							
+							<!-- Details about the vinyl-->
+							<div class="card-body">
+								<p class="card-text">GOLD<br>ABBA <br>€35.95</p>
+							</div>							
+						</div>
+						
+					</div>
+					
+					<br><br>
+					
+					
+					</div>
+					<br><br>
+				</center>	
+				</div>
+			</div>
+		</div>
+		
+		
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

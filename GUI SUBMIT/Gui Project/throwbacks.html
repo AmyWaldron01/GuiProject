@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+    <title>Throw Backs</title>
+  </head>
+  <style>
+	body{
+		background-image: url("background.jpg");
+		}
+  </style>
+  <body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#"> <img src = "musicnote.png" width= "20px" height = "20px">Throw Backs</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+			  <li class="nav-item active">
+			  <!-- A link to the home page -->
+				<a class="nav-link" href="page1.html">Home <span class="sr-only">(current)</span></a>
+			  </li>
+			  <!-- Drop down to navigate through the vinyl category-->
+			  <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="category.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  Shop by Category
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				  <a class="dropdown-item" href="pop.html">Pop</a>
+				  <a class="dropdown-item" href="throwbacks.html">Throw Backs</a>
+				</div>
+			  </li>
+			  <li class="nav-item">
+				<!-- Link to bestsellers -->
+				<a class="nav-link" href="bestseller.html">Best-Seller</a>
+			  </li>
+			  <li class="nav-item">
+				<!-- Link to contact us -->
+				<a class="nav-link " href="contactus.html">Contact us</a>
+			  </li>
+			</ul>
+			
+			<form class="navbar-form">
+				<div class="form-group" style="display:inline;">
+				<div class="input-group">
+					<input type="text" class="form-control">
+					<a href="#" class="btn btn-outline-dark my-2 my-sm-0">
+					  <span class="fa fa-search"></span> <b>Search<b> 
+					</a> 
+				</div>
+				</div>
+			</form>
+			<!--Login & signup Button -->
+			<button class="btn btn-outline-dark my-2 my-sm-0"><a href="login.html">Login</a></button>
+			<button class="btn btn-outline-dark my-2 my-sm-0"><a href="Signup.html">Signup</a></button>
+			<!-- A link from an image of basket that goes to the cart -->
+			<a href="basket.html"><img src="cart.png" class="pad" width="40px" height="40px"></a>
+		  </div>
+		</nav>
+		
+		<!-- A container to make the page neater and for better styling -->
+		<div class="container">
+			
+			<div class="row">
+				<div class="col-md-6 col-lg-4">
+					<h2>Low</h2>
+					<p>Flo Rida, T-Pain</p>
+					<img src="throwbacks/low.jpg" data-toggle="modal" data-target="#myModal1" width="230px" height="275px">
+					<br><br>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">
+						View Vinyl Details
+					</button>
+					
+					<!-- The Modal -->
+					<div class="modal fade" id="myModal1">
+						<div class="modal-dialog modal-dialog-scrollable">
+							<div class="modal-content">
+						  
+								<!-- Modal Header -->
+								<div class="modal-header">
+								  <h1 class="modal-title">low by Flo Rida and T-Pain</h1>
+								  <button type="button" class="close" data-dismiss="modal">×</button>
+								</div>
+								
+								<!-- Modal body -->
+								<div class="modal-body">
+								  <h3>Vinyl Description</h3>
+								  <p>"Low" is the debut single by American rapper Flo Rida, featured on his debut studio album Mail on Sunday and also featured on the soundtrack to the 2008 film Step Up 2: The Streets. The song features and was co-written by fellow American singer T-Pain. There is also a remix in which the hook is sung by Nelly rather than T-Pain. An official remix was made which features Pitbull and T-Pain. The song peaked at number one on the U.S. Billboard Hot 100.</p>
+								  </div>
+								
+								<!-- Modal footer -->
+								<div class="modal-footer">
+									<h4>Price: €16.99</h4>
+									<!-- button to buy vinyl and close modal -->
+									<button type="button" class="btn btn-success"onclick="cartAlert();" onclick="addCart1();" id = "quantity1">Add to Cart</button>
+									<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button> 
+								</div>
+							
+							</div>
+						</div>
+					</div>	
+				</div>
+				
+				<div class="col-md-6 col-lg-4">
+					<h2>Hey Ya!</h2>
+					<p>Outkast</p>
+					<img src="throwbacks/heyya.jpg" data-toggle="modal" data-target="#myModal2" width="230px" height="275px">
+					<br><br>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
+						View Vinyl Details
+					</button>
+					
+					<!-- The Modal -->
+					<div class="modal fade" id="myModal2">
+						<div class="modal-dialog modal-dialog-scrollable">
+							<div class="modal-content">
+						  
+								<!-- Modal Header -->
+								<div class="modal-header">
+								  <h1 class="modal-title">Hey Ya! by Outkast</h1>
+								  <button type="button" class="close" data-dismiss="modal">×</button>
+								</div>
+								
+								<!-- Modal body -->
+								<div class="modal-body">
+								  <h3>Vinyl Description</h3>
+								  <p>"Hey Ya!" is a song performed by the American hip-hop group Outkast, specifically group member André 3000. Along with "The Way You Move", recorded by Outkast's other member Big Boi, "Hey Ya!" was released by LaFace Records as one of the two lead singles from the duo's fifth album, Speakerboxxx/The Love Below. The track became a commercial success, reaching number one in the United States, Australia, Canada, the Czech Republic, Norway, and Sweden. </p>
+								  </div>
+								
+								<!-- Modal footer -->
+								<div class="modal-footer">
+									<h4>Price: €18.95</h4>
+									<!-- button to buy vinyl and close modal -->
+									<button type="button" class="btn btn-success" onclick="cartAlert();" onclick="addCart2();" id = "quantity2">Add to Cart</button>
+									<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button> 
+								</div>
+							
+							</div>
+						</div>
+					</div>	
+				</div>
+				
+				<div class="col-md-6 col-lg-4">
+					<h2>Poker Face</h2>
+					<p>Lady Gaga</p>
+					<img src="throwbacks/pokerface.jpg" data-toggle="modal" data-target="#myModal3" width="230px" height="275px">
+					<br><br>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal3">
+						View Vinyl Details
+					</button>
+			
+					<!-- The Modal -->
+					<div class="modal fade" id="myModal3">
+						<div class="modal-dialog modal-dialog-scrollable">
+							<div class="modal-content">
+						  
+								<!-- Modal Header -->
+								<div class="modal-header">
+								  <h1 class="modal-title">Poker Face by Lady Gaga</h1>
+								  <button type="button" class="close" data-dismiss="modal">×</button>
+								</div>
+								
+								<!-- Modal body -->
+								<div class="modal-body">
+								  <h3>Vinyl Description</h3>
+								 <p>"Poker Face" is a song by American singer Lady Gaga from her debut studio album, The Fame (2008). It was released on September 26, 2008, as the album's second single. "Poker Face" is a synth-pop song in the key of G♯ minor, following in the footsteps of her previous single "Just Dance", but with a darker musical tone. The main idea behind the song is bisexuality and was a tribute by Gaga to her rock and roll boyfriends. The song's lyrics feature various sexual innuendos.</p>
+								 </div>
+								
+								<!-- Modal footer -->
+								<div class="modal-footer">
+									<h4>Price: €12.15</h4>
+									<!-- button to buy vinyl and close modal -->
+									<button type="button" class="btn btn-success" onclick="cartAlert();" onclick="addCart3();" id = "quantity3">Add to Cart</button>
+									<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button> 
+								</div>
+							
+							</div>
+						</div>
+					</div>	
+				</div>	
+			</div>
+		
+			<br><br>
+		
+			<div class="row">
+				<div class="col-md-6 col-lg-4">
+					<h2>Umbrella</h2>
+					<p>Rihanna, JAY-Z</p>
+					<img src="throwbacks/umbrella.jpg" data-toggle="modal" data-target="#myModal4" width="230px" height="275px">
+					<br><br>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal4">
+						View Vinyl Details
+					</button>
+					
+					<!-- The Modal -->
+					<div class="modal fade" id="myModal4">
+						<div class="modal-dialog modal-dialog-scrollable">
+							<div class="modal-content">
+						  
+								<!-- Modal Header -->
+								<div class="modal-header">
+								  <h1 class="modal-title">"Umbrella by Rihanna and JAY-Z</h1>
+								  <button type="button" class="close" data-dismiss="modal">×</button>
+								</div>
+								
+								<!-- Modal body -->
+								<div class="modal-body">
+								  <h3>Vinyl Description</h3>
+								  <p>"Umbrella" is a song by Barbadian singer Rihanna from her third studio album Good Girl Gone Bad (2007). It features American rapper Jay-Z, who co-wrote the song with its producers Tricky Stewart and Kuk Harrell, with additional writing from The-Dream. The song was originally written with Britney Spears in mind, but her label rejected it. "Umbrella" is a pop, hip hop and R&B song with rock elements, referring to a romantic and platonic relationship and the strength of that relationship.</p>
+								  </div>
+								
+								<!-- Modal footer -->
+								<div class="modal-footer">
+									<h4>Price: €14.85</h4>
+									<!-- button to buy vinyl and close modal -->
+									<button type="button" class="btn btn-success" onclick="cartAlert();" onclick="addCart4();" id = "quantity4">Add to Cart</button>
+									<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button> 
+								</div>
+							
+							</div>
+						</div>
+					</div>						
+				</div>
+				
+				<div class="col-md-6 col-lg-4">		
+					<h2>Hey Soul Sister</h2>
+					<p>Train</p>
+					<img src="throwbacks/heysoulsister.jpg" data-toggle="modal" data-target="#myModal5" width="230" height="275px">
+					<br><br>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal5">
+						View Vinyl Details
+					</button>
+					
+					<!-- The Modal -->
+					<div class="modal fade" id="myModal5">
+						<div class="modal-dialog modal-dialog-scrollable">
+							<div class="modal-content">
+						  
+								<!-- Modal Header -->
+								<div class="modal-header">
+								  <h1 class="modal-title">Hey Soul Sister by Train</h1>
+								  <button type="button" class="close" data-dismiss="modal">×</button>
+								</div>
+								
+								<!-- Modal body -->
+								<div class="modal-body">
+								  <h3>Vinyl Description</h3>
+								  <p>"Hey, Soul Sister" is a song by American rock band Train. It was written by lead singer Patrick Monahan, Amund Bjørklund, and Espen Lind. It was released as the lead single from the band's fifth studio album, Save Me, San Francisco (2009). The song reached number three on the Billboard Hot 100chart and is Train's highest-charting song to date.</p>
+								  </div>
+								
+								<!-- Modal footer -->
+								<div class="modal-footer">
+									<h4>Price: €11.04</h4>
+									<!-- button to buy vinyl and close modal -->
+									<button type="button" class="btn btn-success" onclick="cartAlert();" onclick="addCart5();" id = "quantity5">Add to Cart</button>
+									<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button> 
+								</div>
+							
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-6 col-lg-4">
+					<h2>The Lazy Song</h2>
+					<p>Bruno Mars</p>
+					<img src="throwbacks/lazysong.jpg" data-toggle="modal" data-target="#myModal6" width="230px" height="275px">
+					<br><br>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal6">
+						View Vinyl Details
+					</button>
+					
+					<!-- The Modal -->
+					<div class="modal fade" id="myModal6">
+						<div class="modal-dialog modal-dialog-scrollable">
+							<div class="modal-content">
+						  
+								<!-- Modal Header -->
+								<div class="modal-header">
+								  <h1 class="modal-title">The Lazy Song by Bruno Mars</h1>
+								  <button type="button" class="close" data-dismiss="modal">×</button>
+								</div>
+								
+								<!-- Modal body -->
+								<div class="modal-body">
+								  <h3>Vinyl Description</h3>
+								  <p>"The Lazy Song" is a song by American singer-songwriter Bruno Mars for his debut studio album Doo-Wops & Hooligans (2010). It was serviced to contemporary hit radios in the United States on February 15, 2011 as the album's third single by Atlantic and Elektra. Development of "The Lazy Song" began while Mars, Philip Lawrence and Ari Levine were hanging around the studio and didn't feel like working. </p>
+								  </div>
+								
+								<!-- Modal footer -->
+								<div class="modal-footer">
+									<h4>Price: €18.99</h4>
+									<!-- button to buy vinyl and close modal -->
+									<button type="button" class="btn btn-success" onclick="cartAlert();" onclick="addCart6();" id = "quantity6">Add to Cart</button>
+									<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button> 
+								</div>
+							
+							</div>
+						</div>
+					</div>
+				</div>	
+				
+			</div>
+			
+			<br><br>
+			
+		</div>
+		
+		
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+<script>
+	<!-- function to alert the user when a vinyl has been added to the cart -->
+	function cartAlert() {
+			alert("The vinyl has been added to your cart!");
+		}
+
+	<!-- functions to add each vinyl to the cart with a value -->
+	function addCart1(){
+			localStorage.itemQuantity7 = (document.getElementById("quantity1").value)*16.99;
+		}
+		function addCart2(){
+			localStorage.itemQuantity8 = (document.getElementById("quantity2").value)*18.95;
+		}
+		function addCart3(){
+			localStorage.itemQuantity9 = (document.getElementById("quantity3").value)*12.15;
+		}
+		function addCart4(){
+			localStorage.itemQuantity10 = (document.getElementById("quantity4").value)*14.85;
+		}
+		function addCart5(){
+			localStorage.itemQuantity11 = (document.getElementById("quantity5").value)*11.04;
+		}
+		function addCart6(){
+			localStorage.itemQuantity12 = (document.getElementById("quantity6").value)*18.99;
+		}
+</script>
